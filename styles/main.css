@@ -1,0 +1,328 @@
+
+
+:root{
+    --primary-color: #808080; /* Navy */
+    --secondary-color: #ffffff; /* Whiteish */
+    --accent-color: #a7e0ff; /* Turqoise */
+    --text-color: #000000; /* Whiteish */
+    --icon-color: #0073ff; /* Bluesih */
+    --link-color: #000000; /* Black */
+}   
+
+/* First Font Family */
+@font-face {
+    font-family: bold-italic;
+    src: url(/assets/fonts/PlayfairDisplay-BoldItalic.ttf);
+}
+
+/* Second Font Family */
+@font-face {
+    font-family: regular;
+    src: url(/assets/fonts/PlayfairDisplay-Regular.ttf);
+}
+
+/* Third Font Family */
+@font-face {
+    font-family: bold-1;
+    src: url(/assets/fonts/PlayfairDisplay-Bold.ttf);
+}
+
+/* Fourth Font Family */
+@font-face {
+    font-family: extra-bold;
+    src: url(/assets/fonts/PlayfairDisplay-ExtraBold.ttf);
+}
+
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--primary-color);
+}
+
+
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+@media only screen and (min-width: 0em) {
+    /* Styles for small screens go here */
+    /* header navigation */
+
+    #navigation{
+        background-color: var(--accent-color);
+        display: flex;
+    }
+
+    .brand-logo {
+        margin-left: 10%;
+    }
+
+
+    .main-navigation a{
+        color:var(--link-color);
+        text-decoration: none;
+    }
+
+    .main-navigation ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+
+/* HERO */
+/* HERO */
+/* HERO */
+    #hero{
+        display: block;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 37rem;
+        background-color: var(--secondary-color);
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        padding: 40px;
+    }
+
+
+    .hero-text{
+        color: var(--text-color);
+        text-align: left;
+        font-family: bold-1;
+        font-size: 28px;
+    }
+
+    .text-highlight{
+        color: var(--accent-color);
+    }
+
+    .hero-button{
+        width: 8em;
+        height: 3em;
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+        border: none;
+        border-radius: 20px;
+        font-family: extra-bold;
+        font-size: 18px;
+    }
+
+    .hero-button:hover {
+        background-color: black; 
+    }
+
+
+/* services */
+/* services */
+/* services */
+    #services{
+        background-color: var(--primary-color);
+        padding: 5em;
+    }
+
+    .services-section{
+        text-align: center;
+        padding: 5em;
+    }
+
+/* PRICING */
+/* PRICING */
+/* PRICING */
+    #pricing{
+        background-color: var(--accent-color);
+        padding: 5em;
+    }
+
+    .pricing-section{
+        justify-content: center;
+        text-align: center;
+        background-color: var(--secondary-color);
+    }
+
+ 
+/* CONTACT */
+/* CONTACT */
+/* CONTACT */
+    #contact{
+        background-color: var(--text-color);
+        padding: 5em;
+    }
+
+    .contact-section {
+        background-color: var(--primary-color);
+    }
+
+    #form-inputs {
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 2em;
+        font-size: 22px;
+        border: none;
+        border-radius: 10px;
+        padding: 1em;
+        font-family:regular;
+    }
+
+    #full-name{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-family:regular;
+    }
+
+    #email-address{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-family:regular;
+    }
+    
+    #telephone {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-family:regular;
+    }
+
+    #request{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-family:regular;
+    }
+
+    #submit-button {
+        background-color: var(--secondary-color);
+        border: none;
+        padding: 1em;
+        border-radius: 10px;
+        font-size: 18px;
+        font-family:extra-bold;
+        color: black;
+    }
+
+    
+/* faq */
+/* faq */
+/* faq */
+    #faq{
+        background-color: var(--accent-color);
+        padding: 5em;
+    }
+
+    .faq-section{
+        color: var(--text-color);
+    }
+
+
+    /* footer */
+    /* footer */
+    #footer{
+        color: var(--primary-color);
+        text-align: center;
+        background-color: var(--secondary-color);
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .footer-links a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+}
+
+
+
+/* TABLET */
+/* TABLET */
+/* TABLET */
+@media only screen and (min-width: 48em) {
+
+    .brand-logo {
+        margin-left: 5em;
+    }
+
+    .hero-text {
+        font-size: 40px;
+    }
+
+    .pricing-title {
+        font-size: 48px;
+        color: var(--icon-color);
+        font-family: barlow-condensed;
+    }
+
+    .pricing-tiers {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        margin: 1em;
+    }
+
+    #form-inputs {
+        padding-left: 5em;
+    }
+   
+
+}
+
+
+
+/* SMALL DESKTOP */
+/* SMALL DESKTOP */
+/* SMALL DESKTOP */
+@media only screen and (min-width: 64em) {
+    /* Styles for small desktops go here */
+
+
+    .brand-logo {
+        margin-left: 10em;
+    }
+
+    #form-inputs {
+        padding-left: 7em;
+    }
+
+    .contact-form {
+        margin-left: 10em;
+        margin-right: 10em;
+        
+    }
+
+}
+
+
+
+/* LARGE DESKTOP */
+/* LARGE DESKTOP */
+/* LARGE DESKTOP */
+@media only screen and (min-width: 1300px) {
+    /* Styles for large screens go here */
+
+    .brand-logo {
+        margin-left: 15em;
+    }
+
+}
+
+
+
+
+
+
